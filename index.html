@@ -1,66 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ariful Haque Rohan | Flutter Developer</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ariful Haque Rohan — Flutter Dev</title>
+  <meta name="description" content="Flutter Developer • Social Media Specialist • Content Writer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" />
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+  <!-- AOS for scroll animations -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <script defer src="script.js"></script>
+  <!-- QRCode -->
   <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
 </head>
 <body>
-  <header>
-    <h1>Rohan.</h1>
-    <button id="theme-toggle">🌙</button>
+  <div class="bg-gradient"></div>
+
+  <header class="site-header glass">
+    <a href="#home" class="brand">Rohan<span class="dot">.</span></a>
+    <nav class="nav">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <button id="qr-open" class="btn-link" aria-label="Open Instagram QR">
+        <i class="ri-qr-code-line"></i> QR
+      </button>
+      <button id="theme-toggle" aria-label="Toggle theme" class="toggle">
+        <i class="ri-moon-line"></i>
+      </button>
+    </nav>
   </header>
 
-  <section class="hero">
-    <h2>Hi, I'm <span>Ariful Haque Rohan</span></h2>
-    <p>Flutter Developer | Social Media Specialist | Content Writer</p>
-  </section>
-
-  <section class="about">
-    <h3>About Me</h3>
-    <p>
-      I’m Rohan, a passionate Flutter Developer, Social Media Expert, and Content Writer 
-      focused on creating impactful digital experiences. I specialize in building efficient, 
-      user-friendly mobile apps using Flutter and leveraging social media strategies 
-      to boost brand presence and engagement.
-    </p>
-  </section>
-
-  <section class="projects">
-    <h3>Projects</h3>
-    <div class="project-grid">
-      <div class="project-card">
-        <h4>Complaint Management System</h4>
-        <p>Python Django project developed during internship at IOCL.</p>
+  <main id="home" class="hero">
+    <div class="hero-inner" data-aos="fade-up">
+      <div class="avatar pulse">
+        <span>AR</span>
       </div>
-      <div class="project-card">
-        <h4>Weather Prediction AI</h4>
-        <p>Machine learning project predicting rainfall and temperature.</p>
+      <h1 class="title">
+        Hey, I'm <span class="grad">Ariful Haque Rohan</span>
+      </h1>
+      <p class="subtitle">
+        <span id="typewriter">Flutter Developer • Social Media Specialist • Content Writer</span>
+      </p>
+      <div class="cta-row">
+        <a href="#projects" class="btn primary"><i class="ri-rocket-2-fill"></i> View Projects</a>
+        <a href="#contact" class="btn ghost"><i class="ri-mail-line"></i> Contact</a>
       </div>
-      <div class="project-card">
-        <h4>DesignSpace Interiors</h4>
-        <p>Modern website for interior design ideas built with HTML/CSS.</p>
+    </div>
+
+    <aside class="social-bar">
+      <a href="mailto:arifulhaquerohan@gmail.com" aria-label="Email"><i class="ri-mail-fill"></i></a>
+      <a href="https://www.instagram.com/xoxryz/" target="_blank" rel="noreferrer" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+      <!-- You can add more: GitHub, LinkedIn when ready -->
+    </aside>
+  </main>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-right">Featured <span class="grad">Projects</span></h2>
+      <div class="grid" data-aos="fade-up">
+        <article class="card">
+          <div class="card-top">
+            <i class="ri-stack-line"></i>
+            <span class="badge">Django</span>
+          </div>
+          <h3>Complaint Management System</h3>
+          <p>Internship project (IOCL): role-based tickets, status tracking, admin insights.</p>
+          <div class="tags">
+            <span>#Python</span><span>#Django</span><span>#PostgreSQL</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <i class="ri-cloud-windy-line"></i>
+            <span class="badge">ML</span>
+          </div>
+          <h3>Weather Prediction AI</h3>
+          <p>Predicts rainfall, temperature, and wind using classic ML + feature engineering.</p>
+          <div class="tags">
+            <span>#Pandas</span><span>#Scikit-Learn</span><span>#Regression</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <i class="ri-home-6-line"></i>
+            <span class="badge">Web</span>
+          </div>
+          <h3>DesignSpace Interiors</h3>
+          <p>Concept site for interior inspirations with style quiz & color palettes.</p>
+          <div class="tags">
+            <span>#HTML</span><span>#CSS</span><span>#UI</span>
+          </div>
+        </article>
       </div>
     </div>
   </section>
 
-  <section class="contact">
-    <h3>Contact Me</h3>
-    <p>Email: <a href="mailto:arifulhaquerohan@gmail.com">arifulhaquerohan@gmail.com</a></p>
-    <div class="socials">
-      <a href="https://www.instagram.com/xoxryz/" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
-      </a>
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-right">About <span class="grad">Me</span></h2>
+      <div class="about-wrap" data-aos="fade-up">
+        <p>
+          I’m Rohan, a passionate Flutter Developer, Social Media Expert, and Content Writer with a strong focus on creating impactful digital experiences.
+          I specialize in developing efficient, user-friendly mobile apps using Flutter, while also leveraging social media strategies to grow brand presence and engagement.
+          With a blend of technical expertise and creative storytelling, I bring both functionality and personality to every project.
+          I’m always eager to explore new technologies, trends, and ideas that bridge innovation and communication in the digital world.
+        </p>
+      </div>
     </div>
-    <div id="qrcode"></div>
   </section>
 
-  <footer>
-    <p>© 2025 Ariful Haque Rohan | Built with ❤️</p>
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-right">Let's <span class="grad">Talk</span></h2>
+      <div class="contact-grid" data-aos="fade-up">
+        <div class="contact-card glass">
+          <i class="ri-mail-line big"></i>
+          <h3>Email</h3>
+          <p><a href="mailto:arifulhaquerohan@gmail.com">arifulhaquerohan@gmail.com</a></p>
+          <button id="copy-mail" class="btn tiny"><i class="ri-file-copy-line"></i> Copy</button>
+        </div>
+        <div class="contact-card glass">
+          <i class="ri-instagram-line big"></i>
+          <h3>Instagram</h3>
+          <p><a href="https://www.instagram.com/xoxryz/" target="_blank" rel="noreferrer">@xoxryz</a></p>
+          <button id="qr-open-2" class="btn tiny"><i class="ri-qr-code-line"></i> Show QR</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Ariful Haque Rohan — Built with <span class="grad">passion</span> ✨</p>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- QR MODAL -->
+  <div id="qr-modal" class="modal" aria-hidden="true" role="dialog" aria-label="Instagram QR">
+    <div class="modal-content glass">
+      <button id="qr-close" class="close" aria-label="Close QR"><i class="ri-close-line"></i></button>
+      <h3>Scan to open Instagram</h3>
+      <div id="qrcode" class="qrcode"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 700, once: true });
+  </script>
 </body>
 </html>
